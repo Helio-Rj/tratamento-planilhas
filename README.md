@@ -1,4 +1,4 @@
-📊 Tratamento de Planilhas
+📊 Tratamento de Planilhas com Pandas
 
 Automação inteligente para limpeza, padronização e transformação de planilhas Excel e CSV utilizando Python.
 
