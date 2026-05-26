@@ -1,3 +1,5 @@
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green)
 📊 Tratamento de Planilhas com Pandas/Python
 
 Automação inteligente para limpeza, padronização e transformação de planilhas Excel e CSV utilizando Python.
