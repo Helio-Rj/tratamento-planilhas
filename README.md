@@ -1,70 +1,171 @@
-## 📌 Visão Geral
+📊 Tratamento de Planilhas
 
-Este projeto contém um notebook em Python para tratamento e limpeza de planilhas Excel usando `pandas`. Ele carrega dados, faz inspeções iniciais, renomeia colunas, padroniza valores, trata nulos e duplicados e exporta o resultado final para um novo arquivo Excel.
+Automação inteligente para limpeza, padronização e transformação de planilhas Excel e CSV utilizando Python.
 
-## 🚀 O que o notebook faz
+🚀 Sobre o Projeto
 
-- Carrega um arquivo Excel para um DataFrame
-- Exibe amostras e informações gerais do dataset
-- Renomeia colunas para nomes mais legíveis
-- Converte datas para o formato correto
-- Padroniza textos como nomes, bairros e emails
-- Trata valores nulos com preenchimento padrão
-- Remove linhas duplicadas
-- Exporta o DataFrame final para um novo arquivo Excel
+O Tratamento de Planilhas nasceu para resolver um problema extremamente comum em empresas:
 
-## 🧩 Arquivos
+planilhas desorganizadas
+dados inconsistentes
+colunas fora do padrão
+informações duplicadas
+arquivos vindos de diferentes sistemas
+horas de trabalho manual
 
-- `main.ipynb` — notebook principal com todo o fluxo de tratamento de dados.
-- `README.md` — documentação do projeto.
+A proposta do projeto é transformar arquivos brutos em bases organizadas e prontas para:
 
-## 📥 Pré-requisitos
+Power BI
+dashboards
+relatórios
+análises de dados
+automações
+pipelines de ETL
+🧠 O Problema
 
-Certifique-se de ter instalado:
+Em muitos ambientes corporativos, os dados chegam assim:
 
-- Python 3.8+ (recomendado)
-- pandas
-- numpy
-- openpyxl (para leitura/escrita de Excel)
+Nome	telefone	DATA	valor
+HELIO	(21)9999	12/1/26	1.000
+helio	219999	2026-01-12	1000
+vazio	NULL	erro	-
 
-## ⚙️ Instalação rápida
+Isso gera:
 
-```bash
-pip install pandas numpy openpyxl
-```
+erros em dashboards
+retrabalho
+perda de produtividade
+relatórios inconsistentes
+dificuldade de análise
+✅ A Solução
 
-## ▶️ Como usar
+O projeto automatiza o tratamento dessas informações utilizando Python e Pandas.
 
-1. Coloque o arquivo Excel de entrada na mesma pasta do notebook ou informe o caminho correto.
-2. Abra `main.ipynb` no Jupyter ou no VS Code.
-3. Execute as células na ordem, do início ao fim.
-4. O arquivo final será gerado no caminho configurado em `exportar_para_excel`.
+✔ Funcionalidades
+Limpeza de dados
+Padronização de colunas
+Tratamento de valores nulos
+Remoção de duplicidades
+Conversão de datas
+Organização de arquivos CSV e Excel
+Preparação para BI e análise de dados
+Automação de tarefas repetitivas
+⚙️ Tecnologias Utilizadas
+Python
+Pandas
+OpenPyXL
+NumPy
+CSV
+Excel (.xlsx)
+📂 Estrutura do Projeto
+tratamento-planilhas/
+│
+├── data/                # Arquivos brutos
+├── output/              # Arquivos tratados
+├── scripts/             # Scripts principais
+├── notebooks/           # Estudos e análises
+├── requirements.txt
+├── README.md
+🔄 Fluxo da Aplicação
+Planilha Bruta
+       ↓
+Python + Pandas
+       ↓
+Tratamento de Dados
+       ↓
+Padronização
+       ↓
+Base Limpa
+       ↓
+Power BI / Dashboard / Relatórios
+📈 Objetivo
 
-## 💡 Dicas
+Automatizar processos que normalmente consomem horas de trabalho manual.
 
-- Ajuste `coluna_para_excluir` se quiser remover outra coluna.
-- Verifique o mapeamento de colunas em `corrigir_colunas` para manter os nomes consistentes.
-- Se quiser exportar para outro caminho, altere a variável `caminho` no final do notebook.
+O foco do projeto é:
 
-## 📝 Estrutura do fluxo
+produtividade
+organização de dados
+automação operacional
+preparação de bases analíticas
+melhoria na qualidade dos dados
+🧪 Exemplo de Tratamento
+Antes
+cliente	telefone	data
+JOAO	219999	12/1
+joão	(21) 9999	2026/01/12
+Depois
+cliente	telefone	data
+João	21999999999	2026-01-12
+📊 Possíveis Aplicações
 
-1. Leitura e inspeção inicial
-2. Exclusão de colunas indesejadas
-3. Renomeação de colunas
-4. Formatação de datas
-5. Padronização de textos
-6. Tratamento de valores nulos
-7. Remoção de duplicados
-8. Exportação para Excel
+Este projeto pode ser utilizado para:
 
-## 💾 Comandos Git úteis
+Empresas que trabalham com Excel
+Pequenos negócios
+Times de BI
+Analistas de dados
+Processos administrativos
+Organização financeira
+Padronização de bases
+ETL inicial
+🔥 Diferenciais
 
-```bash
-git add .
-git commit -m "Atualiza notebook de tratamento de planilhas"
-git push origin main
-```
+Ao invés de trabalhar com datasets perfeitos, o projeto foi pensado para lidar com o cenário real:
 
-## 📍 Observação
+dados quebrados
+arquivos despadronizados
+inconsistências
+planilhas vindas de múltiplas fontes
+informações incompletas
 
-Este README foi criado para facilitar o uso e a manutenção deste projeto de tratamento de planilhas em Excel. Se necessário, personalize as funções internas do notebook conforme o formato dos seus arquivos de dados.
+Isso aproxima o projeto de problemas reais encontrados em empresas.
+
+🛠 Como Executar
+Clone o repositório
+git clone https://github.com/Helio-Rj/tratamento-planilhas.git
+Acesse a pasta
+cd tratamento-planilhas
+Instale as dependências
+pip install -r requirements.txt
+Execute o projeto
+python main.py
+📌 Roadmap
+Próximas melhorias
+Interface com Streamlit
+Upload automático de arquivos
+Tratamento inteligente de colunas
+Geração automática de relatórios
+Integração com Power BI
+Pipeline de ETL
+Logs automáticos
+Tratamento avançado de erros
+API com FastAPI
+📚 Aprendizados
+
+Este projeto envolve conceitos importantes de:
+
+análise de dados
+limpeza de dados
+engenharia de dados
+automação
+ETL
+manipulação de planilhas
+produtividade empresarial
+👨‍💻 Autor
+
+Desenvolvido por Hélio do Nascimento Silva.
+
+GitHub: https://github.com/Helio-Rj
+
+LinkedIn: https://www.linkedin.com/in/ultimatehelio/
+
+⭐ Considerações Finais
+
+O objetivo deste projeto não é apenas tratar planilhas.
+
+A ideia é demonstrar como Python pode transformar processos manuais demorados em fluxos automatizados, organizados e escaláveis.
+
+Porque no mundo real, os dados quase nunca chegam perfeitos.
+
+E é exatamente aí que começa o verdadeiro trabalho com dados.
